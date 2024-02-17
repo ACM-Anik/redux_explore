@@ -4,12 +4,12 @@ const initialState = {
     
 };
 const cartSlice = createSlice({
-    name: 'counter',
+    name: 'cart',
     initialState,
     reducers: {
         
     },
 });
 
-export const {} = cartSlice.actions;
+// export const {} = cartSlice.actions;
 export default cartSlice.reducer;
