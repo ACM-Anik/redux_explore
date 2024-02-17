@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 const Cart = () => {
 
-    const { } = useSelector((state) => state.counter);
+    const { increment} = useSelector((state) => state.counter);
     const dispatch = useDispatch();
 
     return (
@@ -13,7 +13,7 @@ const Cart = () => {
                 <br />
                 <br />
 
-                <button onClick={() => dispatch()} className="bg-yellow-500 p-2">Add</button>
+                <button onClick={() => dispatch(increment())} className="bg-yellow-500 p-2">Add</button>
                 <div className="text-4xl">
                     <h1>{}</h1>
                 </div>
