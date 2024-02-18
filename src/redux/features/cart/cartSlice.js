@@ -10,6 +10,7 @@ const cartSlice = createSlice({
         add: (state) => {
             state.select = state.select + 1;
         },
+        
         remove: (state) => {
             state.select = state.select - 1;
         },

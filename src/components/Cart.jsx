@@ -7,10 +7,10 @@ const Cart = () => {
     const dispatch = useDispatch();
 
     return (
-        <div>
-            <h1 className="text-center">Cart</h1>
+        <div className="text-center">
+            <h1 className="text-3xl">Cart</h1>
             <div>
-                <button onClick={() => dispatch(addByValue(2))} className="bg-Green-500 p-2">Add By Value Value</button>
+                <button onClick={() => dispatch(addByValue(2))} className="bg-green-500 p-2">Add By Value Value</button>
                 <br />
                 <br />
 

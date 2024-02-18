@@ -7,8 +7,8 @@ const Counter = () => {
     const dispatch = useDispatch();
 
     return (
-        <div>
-            <h1 className="text-center">Counter</h1>
+        <div className="text-center">
+            <h1 className="text-3xl">Counter</h1>
             <div>
                 <button onClick={() => dispatch(incrementByValue(5))} className="bg-blue-500 p-2">Increment By Value 5</button>
                 <br />

@@ -6,7 +6,7 @@ function Home() {
 
   return (
     <>
-      <h1>Home</h1>
+      <h1 className="text-center text-5xl mb-10">Home</h1>
       <Counter></Counter>
       <Cart></Cart>
     </>
