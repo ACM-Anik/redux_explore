@@ -1,9 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
-import { add, extract, addByValue } from "../redux/features/cart/cartSlice";
+import { include, extract, addByValue } from "../redux/features/cart/cartSlice";
 
 const Cart = () => {
 
-    const { select } = useSelector((state) => state.counter);
+    const { select } = useSelector((state) => state.cart);
+    console.log(select);
     const dispatch = useDispatch();
 
     return (
@@ -14,8 +15,8 @@ const Cart = () => {
                 <br />
                 <br />
 
-                <button onClick={() => dispatch(add())} className="bg-yellow-500 p-2">Add</button>
-                <div className="text-4xl">
+                <button onClick={() => dispatch(include())} className="bg-yellow-500 p-2">Include</button>
+                <div className="text-2xl">
                     <h1>You selected: {select}</h1>
                 </div>
                 <button onClick={() => dispatch(extract())} className="bg-yellow-500 p-2">Extract</button>
