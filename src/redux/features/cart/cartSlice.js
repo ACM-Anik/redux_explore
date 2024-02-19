@@ -10,8 +10,8 @@ const cartSlice = createSlice({
         add: (state) => {
             state.select = state.select + 1;
         },
-        
-        remove: (state) => {
+
+        extract: (state) => {
             state.select = state.select - 1;
         },
 
@@ -21,5 +21,5 @@ const cartSlice = createSlice({
     },
 });
 
-export const { add, remove, addByValue } = cartSlice.actions;
+export const { add, extract, addByValue } = cartSlice.actions;
 export default cartSlice.reducer;

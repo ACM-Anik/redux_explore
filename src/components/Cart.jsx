@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { add, remove, addByValue } from "../redux/features/cart/cartSlice";
+import { add, extract, addByValue } from "../redux/features/cart/cartSlice";
 
 const Cart = () => {
 
@@ -16,9 +16,9 @@ const Cart = () => {
 
                 <button onClick={() => dispatch(add())} className="bg-yellow-500 p-2">Add</button>
                 <div className="text-4xl">
-                    <h1>{select}</h1>
+                    <h1>You selected: {select}</h1>
                 </div>
-                <button onClick={() => dispatch(remove())} className="bg-yellow-500 p-2">Remove</button>
+                <button onClick={() => dispatch(extract())} className="bg-yellow-500 p-2">Extract</button>
             </div>
         </div>
     )
